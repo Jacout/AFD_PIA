@@ -20,7 +20,7 @@ void automata::leerCadena(){
     cin.getline(cadena,50);
 
     estados();
-    cout << "Estado final Q" << estado << "\n";
+    cout << "Estado al final de la cadena Q" << estado << "\n";
     estatus();
 
 
@@ -30,7 +30,7 @@ void automata::leerCadena(){
 void automata::estados(){
 
     for(int i = 0; cadena[i] != '\0';++i){
-        cout << "Estado actual q" << estado << "\n";
+        cout << "Estado actual Q" << estado << "\n";
         cout << "Simbolo a consumir " << cadena[i] << "\n";
         switch(estado){
         case 0:
@@ -109,7 +109,7 @@ void automata::estatus(){
     case 5: cout << "La cadena es aceptada";
     break;
     default:
-        cout << "Sepa que ingresaste bro";
+        cout << "Estado no reconocido";
 
     }
 }

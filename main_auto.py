@@ -17,6 +17,7 @@ class automata():
             print(f"Simbolo a consumir {self.cadena[i]}")
             self.estados(i)
         
+        print(f"Estado al final de la cadena Q{self.estado_actual}")
         self.estatus()
         
         """Funcion que verifica los estados que se encuentra y el simbolo que se va a consumir de la cadena
